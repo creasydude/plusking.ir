@@ -16,7 +16,7 @@
 
 - name: "Cobalt"
   url: "https://cobalt.plusking.ir"
-  description: "A fork of the cobalt video downloader for downloading videos for twitter(x) , instagram , youtube , reddit and etc. (Note : For Now Youtube Not Working So Another Webapp is running until the fix)"
+  description: "Video downloader for social media platforms including Twitter, Instagram, Reddit and more"
 
 - name: "Youtube Video Downloader"
   url: "https://ytdl.plusking.ir"

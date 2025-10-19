@@ -28,7 +28,7 @@
 
 - name: "Fingerprint Generator"
   url: "https://fingerprint.plusking.ir"
-  description: "fingerprint generator tool to create unique browser fingerprints for testing and development purposes"
+  description: "Browser fingerprint generator for testing and development"
 
 - name: "Zork Game"
   url: "https://zork.plusking.ir"

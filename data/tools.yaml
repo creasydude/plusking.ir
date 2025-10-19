@@ -1,0 +1,35 @@
+- name: "URL Shortener"
+  url: "https://go.plusking.ir"
+  description: "A simple URL shortening service"
+
+- name: "Paste Note Share"
+  url: "https://paste.plusking.ir"
+  description: "Online note sharing service with syntax highlighting for developers"
+
+- name: "Youtube Subtitle Translator"
+  url: "https://ytsrt.plusking.ir"
+  description: "Translate YouTube subtitles easily in any language using gemini API"
+
+- name: "DNS Tester Tool"
+  url: "https://dnstester.plusking.ir"
+  description: "Test speed of many DNS providers to find the best one for you"
+
+- name: "Cobalt"
+  url: "https://cobalt.plusking.ir"
+  description: "A fork of the cobalt video downloader for downloading videos for twitter(x) , instagram , youtube , reddit and etc. (Note : For Now Youtube Not Working So Another Webapp is running until the fix)"
+
+- name: "Youtube Video Downloader"
+  url: "https://ytdl.plusking.ir"
+  description: "video downloader for youtube videos supporting multiple formats and resolutions"
+
+- name: "SQL Terminal Online"
+  url: "https://sql.plusking.ir"
+  description: "Online sql terminal to practice SQL queries without any setup session based"
+
+- name: "Fingerprint Generator"
+  url: "https://fingerprint.plusking.ir"
+  description: "fingerprint generator tool to create unique browser fingerprints for testing and development purposes"
+
+- name: "Zork Game"
+  url: "https://zork.plusking.ir"
+  description: "Classic text-based adventure powered by Gemini API with session support"

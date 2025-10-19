@@ -1,0 +1,670 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #1a1a1a;
+    --secondary-color: #666666;
+    --link-color: #0066cc;
+    --link-hover: #0052a3;
+    --border-color: #e0e0e0;
+    --max-width: 800px;
+}
+
+/* Dark mode (optional - user can toggle via browser/OS preference) */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #1a1a1a;
+        --text-color: #e0e0e0;
+        --secondary-color: #a0a0a0;
+        --link-color: #4da6ff;
+        --link-hover: #80bfff;
+        --border-color: #333333;
+    }
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    padding: 2rem 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+main {
+    min-height: calc(100vh - 6rem);
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+header .logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+header .logo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+    margin: 0;
+}
+
+/* Mr. Robot style glitch effect */
+.glitch {
+    position: relative;
+    font-weight: 400;
+    text-transform: uppercase;
+    animation: glitch-skew 1s infinite linear alternate-reverse;
+}
+
+.glitch::before,
+.glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.glitch::before {
+    left: 2px;
+    text-shadow: -2px 0 #ff00c1;
+    clip: rect(44px, 450px, 56px, 0);
+    animation: glitch-anim 5s infinite linear alternate-reverse;
+}
+
+.glitch::after {
+    left: -2px;
+    text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
+    animation: glitch-anim2 1s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-anim {
+    0% {
+        clip: rect(31px, 9999px, 94px, 0);
+        transform: skew(0.43deg);
+    }
+    5% {
+        clip: rect(70px, 9999px, 71px, 0);
+        transform: skew(0.25deg);
+    }
+    10% {
+        clip: rect(79px, 9999px, 99px, 0);
+        transform: skew(0.18deg);
+    }
+    15% {
+        clip: rect(17px, 9999px, 39px, 0);
+        transform: skew(0.62deg);
+    }
+    20% {
+        clip: rect(26px, 9999px, 87px, 0);
+        transform: skew(0.37deg);
+    }
+    25% {
+        clip: rect(84px, 9999px, 50px, 0);
+        transform: skew(0.11deg);
+    }
+    30% {
+        clip: rect(2px, 9999px, 59px, 0);
+        transform: skew(0.76deg);
+    }
+    35% {
+        clip: rect(62px, 9999px, 27px, 0);
+        transform: skew(0.29deg);
+    }
+    40% {
+        clip: rect(90px, 9999px, 88px, 0);
+        transform: skew(0.45deg);
+    }
+    45% {
+        clip: rect(12px, 9999px, 95px, 0);
+        transform: skew(0.59deg);
+    }
+    50% {
+        clip: rect(45px, 9999px, 15px, 0);
+        transform: skew(0.22deg);
+    }
+    55% {
+        clip: rect(76px, 9999px, 35px, 0);
+        transform: skew(0.81deg);
+    }
+    60% {
+        clip: rect(54px, 9999px, 68px, 0);
+        transform: skew(0.33deg);
+    }
+    65% {
+        clip: rect(8px, 9999px, 77px, 0);
+        transform: skew(0.66deg);
+    }
+    70% {
+        clip: rect(37px, 9999px, 23px, 0);
+        transform: skew(0.14deg);
+    }
+    75% {
+        clip: rect(91px, 9999px, 42px, 0);
+        transform: skew(0.52deg);
+    }
+    80% {
+        clip: rect(19px, 9999px, 83px, 0);
+        transform: skew(0.39deg);
+    }
+    85% {
+        clip: rect(65px, 9999px, 6px, 0);
+        transform: skew(0.73deg);
+    }
+    90% {
+        clip: rect(48px, 9999px, 58px, 0);
+        transform: skew(0.26deg);
+    }
+    95% {
+        clip: rect(33px, 9999px, 72px, 0);
+        transform: skew(0.57deg);
+    }
+    100% {
+        clip: rect(21px, 9999px, 46px, 0);
+        transform: skew(0.41deg);
+    }
+}
+
+@keyframes glitch-anim2 {
+    0% {
+        clip: rect(65px, 9999px, 100px, 0);
+        transform: skew(0.85deg);
+    }
+    5% {
+        clip: rect(14px, 9999px, 33px, 0);
+        transform: skew(0.19deg);
+    }
+    10% {
+        clip: rect(96px, 9999px, 53px, 0);
+        transform: skew(0.51deg);
+    }
+    15% {
+        clip: rect(41px, 9999px, 74px, 0);
+        transform: skew(0.34deg);
+    }
+    20% {
+        clip: rect(7px, 9999px, 82px, 0);
+        transform: skew(0.68deg);
+    }
+    25% {
+        clip: rect(59px, 9999px, 19px, 0);
+        transform: skew(0.23deg);
+    }
+    30% {
+        clip: rect(88px, 9999px, 44px, 0);
+        transform: skew(0.56deg);
+    }
+    35% {
+        clip: rect(22px, 9999px, 67px, 0);
+        transform: skew(0.38deg);
+    }
+    40% {
+        clip: rect(73px, 9999px, 11px, 0);
+        transform: skew(0.71deg);
+    }
+    45% {
+        clip: rect(35px, 9999px, 91px, 0);
+        transform: skew(0.16deg);
+    }
+    50% {
+        clip: rect(81px, 9999px, 28px, 0);
+        transform: skew(0.49deg);
+    }
+    55% {
+        clip: rect(4px, 9999px, 63px, 0);
+        transform: skew(0.32deg);
+    }
+    60% {
+        clip: rect(56px, 9999px, 85px, 0);
+        transform: skew(0.64deg);
+    }
+    65% {
+        clip: rect(29px, 9999px, 16px, 0);
+        transform: skew(0.27deg);
+    }
+    70% {
+        clip: rect(92px, 9999px, 48px, 0);
+        transform: skew(0.54deg);
+    }
+    75% {
+        clip: rect(13px, 9999px, 79px, 0);
+        transform: skew(0.36deg);
+    }
+    80% {
+        clip: rect(68px, 9999px, 24px, 0);
+        transform: skew(0.69deg);
+    }
+    85% {
+        clip: rect(38px, 9999px, 57px, 0);
+        transform: skew(0.21deg);
+    }
+    90% {
+        clip: rect(86px, 9999px, 9px, 0);
+        transform: skew(0.47deg);
+    }
+    95% {
+        clip: rect(51px, 9999px, 75px, 0);
+        transform: skew(0.31deg);
+    }
+    100% {
+        clip: rect(18px, 9999px, 62px, 0);
+        transform: skew(0.61deg);
+    }
+}
+
+@keyframes glitch-skew {
+    0% {
+        transform: skew(0deg, 0deg);
+    }
+    10% {
+        transform: skew(-1deg, 0deg);
+    }
+    20% {
+        transform: skew(0.5deg, 0deg);
+    }
+    30% {
+        transform: skew(-0.5deg, 0deg);
+    }
+    40% {
+        transform: skew(1deg, 0deg);
+    }
+    50% {
+        transform: skew(0deg, 0deg);
+    }
+    60% {
+        transform: skew(-0.8deg, 0deg);
+    }
+    70% {
+        transform: skew(0.3deg, 0deg);
+    }
+    80% {
+        transform: skew(-0.3deg, 0deg);
+    }
+    90% {
+        transform: skew(0.8deg, 0deg);
+    }
+    100% {
+        transform: skew(0deg, 0deg);
+    }
+}
+
+/* Intro section */
+.intro {
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+    text-align: center;
+    animation: fadeInUp 1s ease-out 0.3s both;
+}
+
+.intro p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+    transition: all 0.3s ease;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.intro p:hover {
+    color: var(--text-color);
+    background: rgba(0, 255, 249, 0.03);
+    transform: translateY(-2px);
+    text-shadow: 0 0 20px rgba(0, 255, 249, 0.3);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Tools section */
+.tools-section {
+    margin-bottom: 4rem;
+}
+
+.section-title {
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+    text-align: center;
+    position: relative;
+    padding-bottom: 0.75rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #00fff9, #ff00c1);
+    border-radius: 2px;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+        width: 60px;
+    }
+    50% {
+        opacity: 0.6;
+        width: 80px;
+    }
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    animation: fadeInUp 0.8s ease-out 0.5s both;
+}
+
+.tool-card {
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    position: relative;
+}
+
+.tool-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #00fff9, #ff00c1);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.tool-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    border-color: rgba(0, 255, 249, 0.3);
+}
+
+.tool-card:hover::before {
+    transform: scaleX(1);
+}
+
+.tool-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: var(--text-color);
+    gap: 1rem;
+}
+
+.tool-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+}
+
+.tool-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+.tool-card:hover .tool-name {
+    color: #00fff9;
+    text-shadow: 0 0 10px rgba(0, 255, 249, 0.3);
+}
+
+.tool-description {
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+    line-height: 1.5;
+}
+
+.external-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.tool-card:hover .external-icon {
+    opacity: 1;
+    transform: translate(2px, -2px);
+    color: #00fff9;
+}
+
+/* Dark mode enhancements for tools */
+@media (prefers-color-scheme: dark) {
+    .tool-card {
+        background: rgba(255, 255, 255, 0.02);
+        border-color: #2a2a2a;
+    }
+
+    .tool-card:hover {
+        background: rgba(0, 255, 249, 0.05);
+        border-color: rgba(0, 255, 249, 0.4);
+        box-shadow: 0 12px 24px rgba(0, 255, 249, 0.1);
+    }
+}
+
+/* Projects section (legacy) */
+.projects {
+    margin-bottom: 3rem;
+}
+
+.projects h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+.project-list {
+    list-style: none;
+}
+
+.project-list li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+
+.project-list li:last-child {
+    border-bottom: none;
+}
+
+.project-name {
+    font-weight: 500;
+    color: var(--text-color);
+    min-width: fit-content;
+}
+
+.separator {
+    color: var(--secondary-color);
+    margin: 0 0.25rem;
+}
+
+.project-list a {
+    color: var(--link-color);
+    text-decoration: none;
+    word-break: break-all;
+    transition: color 0.2s ease;
+}
+
+.project-list a:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding-top: 2rem;
+    margin-top: 3rem;
+    border-top: 1px solid var(--border-color);
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+
+.github-link {
+    display: inline-flex;
+    align-items: center;
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.github-link:hover {
+    color: var(--text-color);
+    transform: translateY(-2px);
+}
+
+.github-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* List page styles */
+.list {
+    margin-top: 2rem;
+}
+
+.list article {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.list article:last-child {
+    border-bottom: none;
+}
+
+.list h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.list h3 a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.list h3 a:hover {
+    color: var(--link-color);
+}
+
+.list p {
+    color: var(--secondary-color);
+}
+
+/* Content section */
+.content {
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.content h1,
+.content h2,
+.content h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.content p {
+    margin-bottom: 1rem;
+}
+
+.content a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        padding: 1rem 0.75rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .intro {
+        font-size: 1rem;
+    }
+
+    .tools-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .project-list li {
+        flex-direction: column;
+        gap: 0.25rem;
+        padding: 1rem 0;
+    }
+
+    .separator {
+        display: none;
+    }
+}

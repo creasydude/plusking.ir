@@ -1,0 +1,12 @@
+baseURL = "https://plusking.ir/"
+languageCode = "en-us"
+title = "Tools"
+
+[params]
+  description = "A minimal list of my personal tools"
+  author = "Mohammad"
+  github = "creasydude"
+  logo = "https://avatars.githubusercontent.com/u/54504220?v=4"
+
+[markup.goldmark.renderer]
+  unsafe = true

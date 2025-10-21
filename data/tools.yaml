@@ -34,6 +34,10 @@
   url: "https://jsonprettier.plusking.ir"
   description: "json formatter and validator tool to prettify and validate JSON data"
 
+- name: "QR Code Generator"
+  url: "https://qr.plusking.ir"
+  description: "simple QR code generator for URLs, text, and more"
+
 - name: "Zork Game"
   url: "https://zork.plusking.ir"
   description: "Classic text-based adventure powered by Gemini API with session support"

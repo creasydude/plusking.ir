@@ -30,6 +30,10 @@
   url: "https://fingerprint.plusking.ir"
   description: "Browser fingerprint generator for testing and development"
 
+- name: "JSON Prettier"
+  url: "https://jsonprettier.plusking.ir"
+  description: "json formatter and validator tool to prettify and validate JSON data"
+
 - name: "Zork Game"
   url: "https://zork.plusking.ir"
   description: "Classic text-based adventure powered by Gemini API with session support"

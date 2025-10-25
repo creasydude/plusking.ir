@@ -10,9 +10,9 @@
   url: "https://ytsrt.plusking.ir"
   description: "Translate YouTube subtitles easily in any language using gemini API"
 
-- name: "DNS Tester Tool"
-  url: "https://dnstester.plusking.ir"
-  description: "Test speed of many DNS providers to find the best one for you"
+- name: "Gold & Currencies Prices"
+  url: "https://currency.plusking.ir/"
+  description: "Live gold and currency (even cryptocurrencies) prices with historical data and charts"
 
 - name: "Cobalt"
   url: "https://cobalt.plusking.ir"
@@ -37,6 +37,18 @@
 - name: "QR Code Generator"
   url: "https://qr.plusking.ir"
   description: "simple QR code generator for URLs, text, and more"
+
+- name: "CR OTP"
+  url: "https://crotp.plusking.ir"
+  description: "Safe, secure offline OTP generator using Base32 secret keys"
+
+- name: "CR CRYPT"
+  url: "https://crcrypt.plusking.ir"
+  description: "Encrypt and decrypt text offline & securely in your browser"
+
+- name: "DNS Tester Tool"
+  url: "https://dnstester.plusking.ir"
+  description: "Test speed of many DNS providers to find the best one for you"
 
 - name: "Zork Game"
   url: "https://zork.plusking.ir"

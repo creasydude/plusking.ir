@@ -22,6 +22,10 @@
   url: "https://ytdl.plusking.ir"
   description: "video downloader for youtube videos supporting multiple formats and resolutions"
 
+- name: "Time Zone Converter"
+  url: "https://time.plusking.ir"
+  description: "Convert time between different time zones easily"
+
 - name: "SQL Terminal Online"
   url: "https://sql.plusking.ir"
   description: "Online sql terminal to practice SQL queries without any setup session based"

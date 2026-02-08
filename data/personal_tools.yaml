@@ -1,2 +1,5 @@
-- name: "BPB Panel"
+- name: "BPB Panel 1 (TR)"
   url: "https://alt.plusking.ir/panel"
+
+- name: "BPB Panel 2 (DE)"
+  url: "https://alt2.plusking.ir/panel"

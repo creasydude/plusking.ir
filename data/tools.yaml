@@ -14,10 +14,6 @@
   url: "https://currency.plusking.ir/"
   description: "Live gold and currency (even cryptocurrencies) prices with historical data and charts"
 
-- name: "SSH Terminal"
-  url: "https://ssht.plusking.ir"
-  description: "Ssh Web Terminal For Using"
-
 - name: "Github Mirror"
   url: "https://gitm.plusking.ir"
   description: "A high-speed, cache-enabled GitHub Release mirror running on Cloudflare Workers."

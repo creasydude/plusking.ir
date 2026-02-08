@@ -14,9 +14,13 @@
   url: "https://currency.plusking.ir/"
   description: "Live gold and currency (even cryptocurrencies) prices with historical data and charts"
 
-- name: "Cobalt"
-  url: "https://cobalt.plusking.ir"
-  description: "Video downloader for social media platforms including Twitter, Instagram, Reddit and more"
+- name: "SSH Terminal"
+  url: "https://ssht.plusking.ir"
+  description: "Ssh Web Terminal For Using"
+
+- name: "Github Mirror"
+  url: "https://gitm.plusking.ir"
+  description: "A high-speed, cache-enabled GitHub Release mirror running on Cloudflare Workers."
 
 - name: "Youtube Video Downloader"
   url: "https://ytdl.plusking.ir"
@@ -53,7 +57,3 @@
 - name: "DNS Tester Tool"
   url: "https://dnstester.plusking.ir"
   description: "Test speed of many DNS providers to find the best one for you"
-
-- name: "Zork Game"
-  url: "https://zork.plusking.ir"
-  description: "Classic text-based adventure powered by Gemini API with session support"

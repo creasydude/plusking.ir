@@ -1,5 +1,11 @@
-- name: "BPB Panel 1 (TR)"
-  url: "https://alt.plusking.ir/panel"
+- name: "Edge Tunnel 1"
+  url: "https://alt.plusking.ir/login"
 
-- name: "BPB Panel 2 (DE)"
-  url: "https://alt2.plusking.ir/panel"
+- name: "Edge Tunnel 2"
+  url: "https://alt2.plusking.ir/login"
+
+- name: "Resume Maker"
+  url: "https://resume.plusking.ir/"
+
+- name: "9Router Panel"
+  url: "https://9router.plusking.ir/"

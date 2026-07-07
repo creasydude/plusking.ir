@@ -14,6 +14,10 @@
   url: "https://currency.plusking.ir/"
   description: "Live gold and currency (even cryptocurrencies) prices with historical data and charts"
 
+- name: "Real-Time Gold, Currency & Crypto API"
+  url: "https://currencies.plusking.ir/"
+  description: "Real-time API for gold, currency, and cryptocurrency prices with price changes, daily high/low, and timestamps."
+
 - name: "Github Mirror"
   url: "https://gitm.plusking.ir"
   description: "A high-speed, cache-enabled GitHub Release mirror running on Cloudflare Workers."

@@ -10,17 +10,17 @@
   url: "https://ytsrt.plusking.ir"
   description: "Translate YouTube subtitles easily in any language using gemini API"
 
+- name: "Github Mirror"
+  url: "https://gitm.plusking.ir"
+  description: "A high-speed, cache-enabled GitHub Release mirror running on Cloudflare Workers."
+
 - name: "Gold & Currencies Prices"
   url: "https://currency.plusking.ir/"
   description: "Live gold and currency (even cryptocurrencies) prices with historical data and charts"
 
-- name: "Real-Time Gold, Currency & Crypto API"
+- name: "Gold, Currency & Crypto Prices API"
   url: "https://currencies.plusking.ir/"
   description: "Real-time API for gold, currency, and cryptocurrency prices with price changes, daily high/low, and timestamps."
-
-- name: "Github Mirror"
-  url: "https://gitm.plusking.ir"
-  description: "A high-speed, cache-enabled GitHub Release mirror running on Cloudflare Workers."
 
 - name: "Youtube Video Downloader"
   url: "https://ytdl.plusking.ir"

@@ -1,10 +1,14 @@
-- name: "URL Shortener"
-  url: "https://go.plusking.ir"
-  description: "A simple URL shortening service"
+- name: "Finance Management"
+  url: "https://finance.plusking.ir/"
+  description: "Simple finance management for Iranians with currency conversion"
 
 - name: "Paste Note Share"
   url: "https://paste.plusking.ir"
   description: "Online note sharing service with syntax highlighting for developers"
+
+- name: "URL Shortener"
+  url: "https://go.plusking.ir"
+  description: "A simple URL shortening service"
 
 - name: "Youtube Subtitle Translator"
   url: "https://ytsrt.plusking.ir"

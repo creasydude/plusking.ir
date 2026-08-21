@@ -7,5 +7,8 @@
 - name: "Resume Maker"
   url: "https://resume.plusking.ir/"
 
-- name: "9Router Panel"
-  url: "https://9router.plusking.ir/"
+- name: "OmniRoute Panel"
+  url: "https://router.plusking.ir/"
+
+- name: "Sub Panel"
+  url: "https://sub.plusking.ir/"
